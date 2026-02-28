@@ -37,6 +37,6 @@ jobs:
       run: docker run --name qsfc -d -p 5173:5173 qsfi
 
     - name: Create the new backend container
-      run: docker run --name qsbc -d -p 9090:5173 qsbi
+      run: docker run --name qsbc -d -p 9090:8080 qsbi
 
       
