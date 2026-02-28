@@ -6,7 +6,7 @@ function App() {
   const [quotes, setQuotes] = useState([]);
   const [newQuote, setNewQuote] = useState("");
 
-  const API_URL = "http://prodhost:8080/quotes";
+  const API_URL = "http://prodhost:9090/quotes";
 
   // Fetch quotes
   const loadQuotes = async () => {
