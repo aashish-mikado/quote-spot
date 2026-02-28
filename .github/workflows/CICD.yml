@@ -1,0 +1,42 @@
+name: MY CICD PIPELINE
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: self-hosted
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Remove previous images
+      run: docker rmi qsfi qsbi || true
+
+    - name: Add execute permission to mvnw
+      run: chmod a+x ./quote-spot-backend/mvnw
+
+    - name: Create the new backend jar
+      run: ./quote-spot-backend/mvnw package
+
+    - name: Create updated frontend image
+      run: docker build -t qsfi ./quote-spot-frontend
+
+    - name: Create updated backend image
+      run: docker build -t qsbi ./quote-spot-backend
+
+    - name: Stop and remove previous containers
+      run: docker rm -f qsfc qsbc || true
+
+    - name: Create the new frontend container
+      run: docker run --name qsfc -d -p 5173:5173 qsfi
+
+    - name: Create the new backend container
+      run: docker run --name qsbc -d -p 9090:5173 qsbi
+
+      
