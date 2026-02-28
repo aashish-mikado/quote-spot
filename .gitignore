@@ -1,0 +1,7 @@
+.idea
+
+quote-spot-backend/.idea
+quote-spot-backend/.mvn
+quote-spot-backend/target
+
+quote-spot-frontend/node_modules
