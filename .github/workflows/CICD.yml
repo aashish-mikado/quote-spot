@@ -22,7 +22,7 @@ jobs:
       run: chmod a+x ./quote-spot-backend/mvnw
 
     - name: Create the new backend jar
-      run: cd quote-spot-backend && mvnw package && cd ..
+      run: cd quote-spot-backend && ./mvnw package && cd ..
 
     - name: Create updated frontend image
       run: docker build -t qsfi ./quote-spot-frontend
