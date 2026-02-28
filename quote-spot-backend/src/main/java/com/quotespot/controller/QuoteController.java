@@ -16,10 +16,6 @@ public class QuoteController {
         quotes.add("Stay hungry, stay foolish – Steve Jobs");
         quotes.add("Code is like humor. When you have to explain it, it’s bad – Cory House");
         quotes.add("First, solve the problem. Then, write the code – John Johnson");
-        quotes.add("ALL IZZ WELL -RANCHO");
-        quotes.add("1 RANDOM QUOTE -R");
-        quotes.add("2 RANDOM QUOTE -R");
-        quotes.add("3 RANDOM QUOTE -R");
 //        2 QUOTES ADDED ABOVE
 
     }
