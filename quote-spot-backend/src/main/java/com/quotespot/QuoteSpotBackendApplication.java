@@ -9,5 +9,6 @@ public class QuoteSpotBackendApplication {
     public static void main(String[] args) {
         SpringApplication.run(QuoteSpotBackendApplication.class, args);
     }
-
+//    THIS IS QUOTE SPOT
 }
+

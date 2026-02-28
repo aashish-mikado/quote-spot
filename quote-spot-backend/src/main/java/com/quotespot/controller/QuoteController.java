@@ -19,6 +19,7 @@ public class QuoteController {
         quotes.add("ALL IZZ WELL -RANCHO");
         quotes.add("1 RANDOM QUOTE -R");
         quotes.add("2 RANDOM QUOTE -R");
+//        2 QUOTES ADDED ABOVE
 
     }
 
