@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.quote-list {
+  list-style: none;
+  padding: 0;
+}
+
+.quote-list li {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
